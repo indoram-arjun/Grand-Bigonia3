@@ -1,0 +1,28 @@
+<i class="fas fa-swimming-pool"></i>
+
+<i class="fas fa-spa"></i>
+
+<i class="fas fa-dumbbell"></i>
+
+<i class="fas fa-shield-alt"></i>
+
+<i class="fas fa-shield-alt"></i>
+
+<i class="fas fa-swimming-pool amenity-icon"></i>
+
+<i class="fas fa-dumbbell amenity-icon"></i>
+
+<i class="fas fa-tree amenity-icon"></i>
+
+<i class="fas fa-child amenity-icon"></i>
+
+<i class="fas fa-baseball-ball amenity-icon"></i>
+
+<i class="fas fa-car amenity-icon"></i>
+<i class="fas fa-shield-alt amenity-icon"></i>
+<i class="fas fa-lightbulb amenity-icon"></i>
+
+
+content: '\f3c5';
+<i class="fas fa-map-marker-alt"></i>
+<i class="fas fa-phone"></i>

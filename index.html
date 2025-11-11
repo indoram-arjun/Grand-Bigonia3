@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Bigonia</title>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Brochure Modal -->
+    <div class="brochure-modal" id="brochureModal" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Request Brochure</h3>
+                <button class="close-modal" id="closeModal">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Fill out the form below to download our exclusive brochure</p>
+                <form id="brochureForm" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="hidden" name="form_id" value="popup_form">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                            required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="mobile_no" id="mobile_no" onkeypress="return /[0-9]/i.test(event.key)"
+                            pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" class="form-control"
+                            placeholder="Enter your phone number" required="">
+                    </div>
+                    <button type="submit" class="submit-btn">Download Brochure</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button class="brochure-btn brochureBtn" id="brochureBtn">
+        <span>D O W N L O A D &nbsp; B R O C H U R E</span>
+    </button>
+    <!-- Header Section -->
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/pgb_logo.png" alt="Grand Bigonia Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="brochureBtn" id="Enquire"><a href="#contact">Enquire Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <span class="pretitle">Premium Living Experience</span>
+                <h1 class="bhk-title">2 &amp; 3 BHK</h1>
+                <p class="apartment-text">Luxury Apartments and Limited</p>
+                <p class="condominium-text">Grand Begonia Condominium</p>
+                <button class="banner-btn brochureBtn">Enquire Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Grand Begonia</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image animate-on-scroll animated">
+                    <img src="images/prateek_grand_banner.jpg" alt="Grand Begonia Interior">
+                </div>
+
+                <div class="about-text animate-on-scroll animated">
+                    <h3>Experience Unparalleled Luxury in Siddhartha Vihar</h3>
+                    <p>Prateek Grand Begonia represents the pinnacle of luxury living, where architectural brilliance
+                        meets unparalleled comfort. Located in the prestigious Siddhartha Vihar, our residences offer
+                        breathtaking views, exceptional amenities, and a lifestyle beyond compare.</p>
+                    <p>Each residence is meticulously designed with attention to detail, featuring premium finishes,
+                        spacious layouts, and state-of-the-art technology. Our commitment to excellence ensures that
+                        every aspect of Grand Begonia exceeds expectations.</p>
+
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Infinity Pool</h4>
+                                <p>Stunning rooftop pool with panoramic city views</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Luxury Spa</h4>
+                                <p>Premium wellness center with expert therapists</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Fitness Center</h4>
+                                <p>State-of-the-art equipment with personal trainers</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Security</h4>
+                                <p>Advanced surveillance and trained personnel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Amenities Section -->
+
+    <section class="section-padding amenities-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Amenities</h2>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-swimming-pool amenity-icon"></i>
+                    <h4>Swimming Pool</h4>
+                    <p>Resort-style infinity pool with panoramic views</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-dumbbell amenity-icon"></i>
+                    <h4>Fitness Center</h4>
+                    <p>State-of-the-art equipment with personal trainers</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-tree amenity-icon"></i>
+                    <h4>Landscaped Gardens</h4>
+                    <p>Beautifully designed green spaces throughout</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-child amenity-icon"></i>
+                    <h4>Kids Play Zone</h4>
+                    <p>Safe and fun area for children to play</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-baseball-ball amenity-icon"></i>
+                    <h4>Sports Courts</h4>
+                    <p>Tennis, basketball and badminton courts</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-car amenity-icon"></i>
+                    <h4>Covered Parking</h4>
+                    <p>Secure and spacious parking facilities</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-shield-alt amenity-icon"></i>
+                    <h4>24/7 Security</h4>
+                    <p>Advanced surveillance and trained personnel</p>
+                </div>
+
+                <div class="amenity-item">
+                    <i class="fas fa-lightbulb amenity-icon"></i>
+                    <h4>Smart Home Features</h4>
+                    <p>Automated lighting, security and climate control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Floor Plans Section -->
+    <section class="section-padding floor-plans-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Floor Plans</h2>
+            </div>
+
+            <div class="plan-tabs">
+                <button class="plan-tab active" id="plan-tab1">2 BHK</button>
+                <button class="plan-tab" id="plan-tab2">3 BHK</button>
+            </div>
+
+            <div class="plan-content" id="plan-content1">
+                <div class="plan-container">
+                    <div class="plan-image floor_bg floor_bg_3bhk">
+                        <img src="images/floor_bg_3bhk.jpeg" alt="3 BHK Floor Plan">
+                    </div>
+                    <div class="plan-details">
+                        <h3>Spacious 2 BHK Apartment</h3>
+                        <ul class="plan-features">
+                            <li>Total built-up area: 1075 sq.ft</li>
+                            <li>Spacious living with terraces</li>
+                            <li>2 bedrooms with attached bathrooms</li>
+                            <li>Modern modular kitchen</li>
+                            <li>Large balcony with panoramic views</li>
+                            <li>Premium flooring and finishes</li>
+                        </ul>
+                        <button class="view-plan-btn brochureBtn" fdprocessedid="xkxdh7">View Detailed Plan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan-content" id="plan-content2">
+                <div class="plan-container">
+                    <div class="plan-image floor_bg floor_bg_4bhk">
+                        <img src="images/floor_bg_4bhk.jpeg" alt="4 BHK Floor Plan">
+                    </div>
+                    <div class="plan-details">
+                        <h3>Luxury 3 BHK </h3>
+                        <ul class="plan-features">
+                            <li>Total built-up area: 1500 sq.ft</li>
+                            <li> style with private terrace</li>
+                            <li>3 bedrooms with ensuite bathrooms</li>
+                            <li>Gourmet kitchen with premium appliances</li>
+                            <li>Expansive living and dining areas</li>
+                            <li>Panoramic city views</li>
+                        </ul>
+                        <button class="view-plan-btn brochureBtn">View Detailed Plan</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Location Section -->
+
+    <section class="section-padding location-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Location Map</h2>
+            </div>
+
+            <div class="location-container">
+                <div class="location-map" id="location-map">
+                    <img id="map-loc" src="images/prateek_grand_location.png" alt="Location Map">
+                </div>
+                <div class="location-advantages">
+                    <h3>Location Advantages</h3>
+                    <ul class="advantages-list">
+                        <li><strong>Prime Location</strong> - Siddhartha Vihar, Ghaziabad (Premium Residential Area)
+                        </li>
+                        <li><strong>Metro Connectivity</strong> - 10 mins from Akshardham Metro Station</li>
+                        <li><strong>Healthcare</strong> - 15 mins from Shanti Gopal Hospital</li>
+                        <li><strong>Education</strong> - Near Pre Schools &amp; Multiple International Schools</li>
+                        <li><strong>Connectivity</strong> - Connected to NH-3 </li>
+                        <li><strong>Green Spaces</strong> - Connectivity From RRTS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section class="section-padding price-list-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Price List</h2>
+            </div>
+
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h4>2 BHK Apartment</h4>
+                        <div class="price-tag">₹1.3 Cr*</div>
+                        <div class="price-subtitle">Starting Price</div>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-feature">
+                            <span>Typology</span>
+                            <span>Spacious living with terraces</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Size</span>
+                            <span>1075 sq.ft</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Bedrooms</span>
+                            <span>2</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Bathrooms</span>
+                            <span>2</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Balcony</span>
+                            <span>2 Large</span>
+                        </div>
+                        <button class="query-btn mt-4 brochureBtn" >Query Now</button>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-header">
+                        <h4>3 BHK </h4>
+                        <div class="price-tag">₹1.8 Cr*</div>
+                        <div class="price-subtitle">Limited Availability</div>
+                    </div>
+                    <div class="price-body">
+                        <div class="price-feature">
+                            <span>Typology</span>
+                            <span>Luxury style</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Size</span>
+                            <span>1500 sq.ft</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Bedrooms</span>
+                            <span>3</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Bathrooms</span>
+                            <span>3 + 1 Guest</span>
+                        </div>
+                        <div class="price-feature">
+                            <span>Terrace</span>
+                            <span>Private</span>
+                        </div>
+                        <button class="query-btn mt-4 brochureBtn" >Query Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Project Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery_img_1.jpeg" alt="Building Exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_img_2.jpeg" alt="Building Exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_img_3.jpeg" alt="Building Exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_img_4.jpeg" alt="Building Exterior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="section-padding contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <p class="section-subtitle">Contact us for site visits and personalized consultation</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <strong>Site Address</strong><br>
+                            Prateek Grand City, Siddhartha Vihar, Ghaziabad, Uttar Pradesh 201017
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <strong>Phone</strong><br>
+                            +91 8595089437
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="footer_form" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name*"
+                                required="" fdprocessedid="69yff8">
+                            <input type="hidden" name="form_id" value="footer_form">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email*"
+                                required="" fdprocessedid="kw1xb4i">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="mobile_no" id="mobile_no"
+                                onkeypress="return /[0-9]/i.test(event.key)" pattern="[7-9]{1}[0-9]{9}" minlength="10"
+                                maxlength="10" class="form-control" placeholder="Your Phone*" required=""
+                                fdprocessedid="v09wmh">
+                        </div>
+                        <p class="consent-text">
+                            I authorize Prateek Group representatives to Call, SMS, Email or WhatsApp me about its
+                            products and offers. This consent overrides any registration for DNC/NDNC.
+                        </p>
+                        <button type="submit" class="send-btn" fdprocessedid="6go4it">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col ">
+                    <div class="footer-logo">PRATEEK GRAND BEGONIA</div>
+                    <p class="footer-text"><strong>Disclaimer :</strong> The content is for information purposes only
+                        and does not constitute an offer to avail of any service. Prices mentioned are subject to change
+                        without notice and properties mentioned are subject to availability. Images for representation
+                        purposes only. The logos and images used on this website are the exclusive property of Prateek
+                        Group and are protected under applicable copyright laws. We do not claim any ownership or rights
+                        to these materials, and they are used on this website solely for informational purposes. This is
+                        NOT an official website of Prateek Group but the Official Site of its Authorized Sales Partner.
+                        We may share data with RERA registered brokers/companies for further processing. We may also
+                        send updates to the mobile number/email id registered with us.</p>
+                </div>
+                <div class="col">
+                    <div class="rera_main">
+                        <p class="footer-note text-white ">
+                            Prateek Grand Begonia RERA Reg <br> No.: UPRERAPRJ863272/09/2024
+                        </p>
+                        <img src="images/begonia_rera.jpeg" alt="RERA Logo" class="rera_logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025 Copyright Housedge Design &amp; Developed By <a href="https://www.evgsoftware.in/"
+                        target="_blank">EVG Software Solutions</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Main js file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
